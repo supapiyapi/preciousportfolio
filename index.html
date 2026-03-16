@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Precious Grace De Castro | Portfolio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="light">
+
+
+<!-- LANDING PAGE -->
+
+<div id="landing-page" class="landing-page">
+
+<p class="landing-desc">
+Bridging the gap between technical development and business goals through Agile methodologies and data-driven insights.
+</p>
+
+<button onclick="enterPortfolio()" class="main-btn cta">
+View Portfolio
+</button>
+
+</div>
+
+
+
+<!-- PORTFOLIO -->
+
+<div id="portfolio-wrapper" class="hidden">
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="sidebar-top">
+
+<button class="sidebar-item active" onclick="goToPage('home')" data-page="home">
+<i data-lucide="home"></i>
+</button>
+
+<button class="sidebar-item" onclick="goToPage('about')" data-page="about">
+<i data-lucide="user"></i>
+</button>
+
+<button class="sidebar-item" onclick="goToPage('skills')" data-page="skills">
+<i data-lucide="cpu"></i>
+</button>
+
+<button class="sidebar-item" onclick="goToPage('certifications')" data-page="certifications">
+<i data-lucide="award"></i>
+</button>
+
+<button class="sidebar-item" onclick="goToPage('professional')" data-page="professional">
+<i data-lucide="briefcase"></i>
+</button>
+
+<button class="sidebar-item" onclick="goToPage('internship')" data-page="internship">
+<i data-lucide="graduation-cap"></i>
+</button>
+
+<button class="sidebar-item" onclick="goToPage('interests')" data-page="interests">
+<i data-lucide="heart"></i>
+</button>
+
+<button class="sidebar-item" onclick="goToPage('contact')" data-page="contact">
+<i data-lucide="mail"></i>
+</button>
+
+</div>
+
+</aside>
+
+
+
+<!-- HOME -->
+
+<div id="home-page" class="page active">
+
+<div class="hero-container">
+
+<h1 class="hero-title serif">
+Welcome to My Portfolio
+</h1>
+
+<p class="hero-desc">
+Bridging the gap between technical development and business goals through Agile methodologies and data-driven insights.
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- ABOUT -->
+
+<div id="about-page" class="page">
+
+<div class="container">
+
+<h2 class="section-title">About Me</h2>
+
+<p class="section-text">
+
+Professional Scrum Master with experience leading software development for IAF CertSearch at Quality Trade Asia. Experienced in Scrum facilitation, stakeholder collaboration, and delivering products from roadmap planning to sprint retrospectives.
+
+<br><br>
+
+Former Project Manager and QA Tester intern at the University of Batangas ICT Department, contributing to multiple university systems while working closely with administrators and auditors.
+
+<br><br>
+
+A former varsity athlete and debate team member, I bring teamwork, discipline, and strong communication into every project.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- SKILLS -->
+
+<div id="skills-page" class="page">
+
+<div class="container">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">Strategic Planning</div>
+<div class="skill-card">Problem Solving & Critical Thinking</div>
+<div class="skill-card">Stakeholder Management</div>
+<div class="skill-card">Requirements Gathering</div>
+<div class="skill-card">Attention to Detail</div>
+<div class="skill-card">Team Collaboration</div>
+
+</div>
+
+<h2 class="section-title">Tools</h2>
+
+<div class="tools-list">
+
+<p><b>AI & Automation:</b> ChatGPT, Gemini, Claude, Rovo, Taqtic, NoteGPT</p>
+
+<p><b>Project Management:</b> Jira, Trello, Notion, Monday.com, Google Calendar, ClickUp</p>
+
+<p><b>Productivity Suite:</b> Confluence, Google Workspace, Microsoft 365</p>
+
+<p><b>Design & Content:</b> Canva, Figma, Google Sites, MS PowerPoint, LucidChart</p>
+
+<p><b>Communication:</b> Slack, MS Teams, Zoom, Google Meet, Gmail, Outlook</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- CERTIFICATIONS -->
+
+<div id="certifications-page" class="page">
+
+<div class="container">
+
+<h2 class="section-title">Certifications</h2>
+
+<p class="section-text">
+I am committed to continuous learning and professional development.
+</p>
+
+<div id="certifications-grid" class="cert-grid"></div>
+
+</div>
+
+</div>
+
+
+
+<!-- PROFESSIONAL -->
+
+<div id="professional-page" class="page">
+
+<div class="container">
+
+<h2 class="section-title">Professional Portfolio</h2>
+
+<div class="gallery">
+
+<img src="images/pro1.jpg" onclick="openLightbox(this.src)">
+<img src="images/pro2.jpg" onclick="openLightbox(this.src)">
+<img src="images/pro3.jpg" onclick="openLightbox(this.src)">
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- INTERNSHIP -->
+
+<div id="internship-page" class="page">
+
+<div class="container">
+
+<h2 class="section-title">Internship Portfolio</h2>
+
+<div class="gallery">
+
+<img src="images/intern1.jpg" onclick="openLightbox(this.src)">
+<img src="images/intern2.jpg" onclick="openLightbox(this.src)">
+<img src="images/intern3.jpg" onclick="openLightbox(this.src)">
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- NON ACADEMIC -->
+
+<div id="interests-page" class="page">
+
+<div class="container">
+
+<h2 class="section-title">College Non-Academic</h2>
+
+<div class="gallery">
+
+<img src="images/karate.jpg" onclick="openLightbox(this.src)">
+<img src="images/volleyball.jpg" onclick="openLightbox(this.src)">
+<img src="images/debate.jpg" onclick="openLightbox(this.src)">
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- CONTACT -->
+
+<div id="contact-page" class="page">
+
+<div class="container">
+
+<h2 class="section-title">Contact Me</h2>
+
+<p><b>Email:</b> pgldecastro@gmail.com</p>
+<p><b>Mobile:</b> 0966-410-5755</p>
+
+<p><b>Current Address:</b> Santisima Cruz Sur, Laguna</p>
+<p><b>Permanent Address:</b> Batangas, Philippines</p>
+
+<textarea id="email-message" placeholder="Write a short message..." rows="2"></textarea>
+
+<div class="contact-cta">
+
+<button onclick="sendEmail()" class="main-btn cta">
+Send Email
+</button>
+
+<a 
+href="https://www.linkedin.com/in/precious-grace-de-castro"
+target="_blank"
+class="main-btn cta linkedin-btn">
+LinkedIn
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- MODAL -->
+
+<div id="modal" class="modal hidden">
+
+<div class="modal-content">
+
+<button class="modal-close" onclick="closeModal()">✕</button>
+
+<h3 id="modal-title"></h3>
+
+</div>
+
+</div>
+
+
+
+<!-- LIGHTBOX -->
+
+<div id="lightbox" class="lightbox hidden">
+
+<span onclick="closeLightbox()" class="lightbox-close">✕</span>
+
+<img id="lightbox-img">
+
+</div>
+
+
+
+<!-- FLOATING CONTROLS -->
+
+<div class="floating-controls">
+
+<button onclick="toggleTheme()" class="float-btn">
+<i data-lucide="moon"></i>
+</button>
+
+<button onclick="toggleLanding()" class="float-btn">
+<i data-lucide="arrow-left-right"></i>
+</button>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
